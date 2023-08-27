@@ -3,7 +3,7 @@
     first shader, playing with impulses, palettes and fractions.
     little bit excessive, maybe I should add some fading towards edges..? 
     
-    inspiration from 
+    Tutorial from Kishimisu (https://www.shadertoy.com/view/mtyGWy) helped out a long way, thanks!
 */
 
 #define MAX_ITERATIONS 4.
@@ -21,7 +21,6 @@ float expImpulse( float x, float k )
     float h = k*x;
     return h*exp(1.0-h);
 }
-
 
 void mainImage( out vec4 fragColor, in vec2 fragCoord )
 {
